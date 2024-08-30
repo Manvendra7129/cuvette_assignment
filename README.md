@@ -4,9 +4,9 @@ A Spring Boot application designed to manage and display bank branches and servi
 
 ## Features
 
-- List of Bank Branches: View all bank branches located in Bangalore.
+- List of Bank Branches: View  bank branches located in Bangalore.
 - List of Bank Services: Browse services offered by the bank.
-- Responsive Design: The application is designed to be user-friendly and responsive.
+
 
 ## Technologies Used
 

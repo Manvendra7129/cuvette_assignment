@@ -1,54 +1,71 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
+  <head>
     <title>Branches</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        table {
-            width: 80%;
-            margin: 0 auto;
-            border-collapse: collapse;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            background-color: white;
-        }
-        th, td {
-            padding: 12px 15px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            background-color: #007bff;
-            color: white;
-        }
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #007bff;
+      }
+      table {
+        width: 80%;
+        margin: 0 auto;
+        border-collapse: collapse;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+      }
+      th,
+      td {
+        padding: 10px 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #007bff;
+        color: #fff;
+        font-weight: bold;
+      }
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
     </style>
-</head>
-<body>
-<h1 th:text="${bankName}">Bank Name</h1>
-<table>
-    <tr>
+  </head>
+  <body>
+    <h1 th:text="${bankName}">Bank Name</h1>
+
+    <table>
+      <tr>
+        <th>#</th>
         <th>Branch Name</th>
         <th>Address</th>
-    </tr>
-    <tr th:each="branch : ${branches}">
+      </tr>
+      <tr th:each="branch, stat : ${branches}">
+        <td th:text="${stat.count}">1</td>
         <td th:text="${branch.branchName}">Branch Name</td>
         <td th:text="${branch.address}">Address</td>
-    </tr>
-</table>
-</body>
+      </tr>
+    </table>
+
+    <script>
+      const numberOfBranches = document.querySelectorAll(
+        'tr[th\\:each="branch, stat : ${branches}"]'
+      ).length;
+
+      document.getElementById(
+        "branchCount"
+      ).textContent = `Number of Branches: ${numberOfBranches}`;
+    </script>
+  </body>
 </html>

@@ -109,7 +109,7 @@ You can access it through the following links:
 
 - **Controller**: Handles HTTP requests and responses (`BankController.java`).
 - **Service**: Contains business logic (`BankService.java`).
-- **Entity**: Represents database tables (`Branch.java`, `BankServiceOffering.java`).
+- **Entity**: Represents database tables (`Bank.java`,`Branch.java`, `BankServiceOffering.java`).
 - **Repository**: Data access layer interfaces extending `JpaRepository`.
 
 ### Further Enhancements

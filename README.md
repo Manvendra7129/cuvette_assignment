@@ -91,8 +91,8 @@ cd banking-application
 2. Update the `application.properties` file with your MySQL username and password.
    ```properties
    spring.datasource.url=jdbc:mysql://localhost:3306/bankingdb
-   spring.datasource.username=your-username
-   spring.datasource.password=your-password
+   spring.datasource.username=username
+   spring.datasource.password=password
    spring.jpa.hibernate.ddl-auto=update
    ```
 

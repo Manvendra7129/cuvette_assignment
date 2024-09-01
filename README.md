@@ -96,17 +96,11 @@ cd banking-application
    spring.jpa.hibernate.ddl-auto=update
    ```
 
-### Run the Application
 
-You can run the application using your IDE or through the command line:
-
-```bash
-mvn spring-boot:run
-```
 
 ### Access the Application
 
-Once the application is running, you can access it through the following links:
+You can access it through the following links:
 
 - **View Bank Branches in Bangalore**: [branches](https://cuvetteassignment-production.up.railway.app/bank/state%20bank%20of%20india/branches)
 - **View Bank Services Offered**: [services](https://cuvetteassignment-production.up.railway.app/bank/state%20bank%20of%20india/services)

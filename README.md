@@ -1,4 +1,4 @@
-Here’s a README file based on the provided code and details of your project:
+
 
 ---
 
@@ -87,10 +87,10 @@ cd banking-application
 
 ### Database Setup
 
-1. Create a MySQL database named `banking_application`.
+1. Create a MySQL database named `bankingdb`.
 2. Update the `application.properties` file with your MySQL username and password.
    ```properties
-   spring.datasource.url=jdbc:mysql://localhost:3306/banking_application
+   spring.datasource.url=jdbc:mysql://localhost:3306/bankingdb
    spring.datasource.username=your-username
    spring.datasource.password=your-password
    spring.jpa.hibernate.ddl-auto=update
@@ -126,4 +126,4 @@ Once the application is running, you can access it through the following links:
 
 ---
 
-This README provides a comprehensive overview of the project and should be helpful for anyone setting up or using the application. Let me know if you need any more details or modifications!
+

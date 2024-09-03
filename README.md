@@ -81,8 +81,8 @@ This project is a web-based banking application that allows users to view bank b
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/Manvendra7129/banking-application.git
-cd banking-application
+git@github.com:Manvendra7129/cuvette_assignment.git
+cd cuvette_assignment
 ```
 
 ### Database Setup
